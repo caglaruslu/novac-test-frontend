@@ -1,6 +1,6 @@
 import type { Agent } from '../types/agent';
 
-const API_URL = import.meta.env.VITE_API_URL || 'https://novac-test-backend-production.up.railway.app:8080';
+const API_URL = import.meta.env.VITE_API_URL || 'https://novac-test-backend-production.up.railway.app';
 
 function getErrorMessage(res: Response, fallback: string) {
   return res.json().then((data) => data?.message || fallback).catch(() => fallback);
